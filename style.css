@@ -54,6 +54,8 @@ grid-template-areas:
 .calculator {
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
+    display: flex;
+    flex-direction: column;
     border: 1px solid red;
 }
 
@@ -103,7 +105,6 @@ grid-template-areas:
 .input-informations input:hover {
     outline: hsl(183, 100%, 15%) solid 2px;
 }
-
 
 .input-informations {
     width: 100%;
@@ -212,6 +213,54 @@ grid-template-areas:
     border-radius: 5%;
     border: 1px solid greenyellow;
     
+}
+
+.result{
+    color: white;
+    font-size: 10px;
+    font-weight: 400;
+    justify-self: left;
+    align-self: center;
+}
+
+.per-person {
+    color: hsl(172, 67%, 45%);
+    font-size: 10px;
+    font-weight: 400;
+    justify-self: left;
+    align-self: center;
+}
+
+.value {
+    color: hsl(172, 67%, 45%);
+    font-size: 30px;
+    font-weight: 700;
+    justify-self: right;
+    align-self: center;
+}
+
+#calc {
+    width: 80%;
+    height: 40%;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-size: 16px;
+    font-weight: 700;
+    text-shadow: 1px 0px hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 10px;
+}
+
+#resetar {
+    width: 80%;
+    height: 40%;
+    background-color: hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+    font-size: 16px;
+    font-weight: 700;
+    text-shadow: 1px 0px hsl(183, 100%, 15%);
+    border: none;
+    border-radius: 10px;
 }
 
 
