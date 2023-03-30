@@ -82,18 +82,8 @@ h1 {
     font-weight: 700;
 }
 
-.input-informations input:focus {
-    outline: none;
-}
-
 .input-informations input:hover {
     outline: hsl(183, 100%, 15%) solid 2px;
-}
-
-.input-informations {
-    width: 100%;
-    height: 25%;
-    position: relative;
 }
 
 .input-informations img {
@@ -152,14 +142,6 @@ h1 {
     color: hsl(183, 100%, 15%);
 }
 
-#tip_custom::-webkit-inner-spin-button,
-#tip_custom::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0;
-}
-
 .people {
     grid-area: people;
     width: 90%;
@@ -176,7 +158,6 @@ h1 {
     height: 100%;
     border-radius: 5%;
     border: 1px solid greenyellow;
-    
 }
 
 .result{
