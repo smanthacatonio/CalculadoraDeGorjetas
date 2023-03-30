@@ -32,10 +32,11 @@ h1 {
         "bill calc"
         "tip calc"
         "people calc";
+    border: 1px solid black;
 }
 
-/* 
-.input-informations{
+
+/* .input-informations{
 background-color: hsl(0, 0%, 100%);
 border-radius: 10px;
 width: 50%;
@@ -47,11 +48,13 @@ grid-template-areas:
     "bill calc"
     "tip calc"
     "people calc";
-    border: 1px solid black; }*/
+    border: 1px solid black; 
+} */
 
 .calculator {
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
+    border: 1px solid red;
 }
 
 .input-text {
@@ -139,9 +142,8 @@ grid-template-areas:
     height: 100%;
     display: grid;
     grid-template-columns: 33% 33% 33%;
-    grid-template-rows: 33% 33% 33%;
+    grid-template-rows: 50% 50%;
     grid-template-areas:
-        "header header header"
         "b1 b2 b3"
         "b4 b5 b6";
 }
@@ -154,15 +156,14 @@ grid-template-areas:
 .tip button,
 .tip input {
     text-align: center;
-    width: 90%;
-    height: 90%;
+    width: 80px;
+    height: 30px;
     border: none;
     outline: none;
     border-radius: 10%;
     font-size: 15px;
     font-weight: 400;
     align-content: center;
-    padding: 10px;
 }
 
 .tip button:hover:not(.selected),
@@ -201,6 +202,16 @@ grid-template-areas:
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
+}
+
+.tip-calculator{
+    grid-area: calc;
+    background-color: hsl(183, 100%, 15%);
+    width: 100%;
+    height: 100%;
+    border-radius: 5%;
+    border: 1px solid greenyellow;
+    
 }
 
 
