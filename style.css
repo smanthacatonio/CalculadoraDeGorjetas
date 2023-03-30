@@ -35,22 +35,6 @@ h1 {
     border: 1px solid black;
 }
 
-
-/* .input-informations{
-background-color: hsl(0, 0%, 100%);
-border-radius: 10px;
-width: 50%;
-height: 50%;
-display: grid;
-grid-template-columns: 50% 50%;
-grid-template-rows: 33% 33% 33%;
-grid-template-areas: 
-    "bill calc"
-    "tip calc"
-    "people calc";
-    border: 1px solid black; 
-} */
-
 .calculator {
     background-color: hsl(0, 0%, 100%);
     border-radius: 10px;
@@ -110,26 +94,6 @@ grid-template-areas:
     width: 100%;
     height: 25%;
     position: relative;
-}
-
-.input-informations input {
-    width: 100%;
-    height: 100%;
-    border: none;
-    border-radius: 10px;
-    background-color: hsl(189, 41%, 97%);
-    text-align: right;
-    color: hsl(183, 100%, 15%);
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.input-informations input:focus {
-    outline: none;
-}
-
-.input-informations input:hover {
-    outline: hsl(183, 100%, 15%) solid 2px;
 }
 
 .input-informations img {
@@ -239,10 +203,10 @@ grid-template-areas:
     align-self: center;
 }
 
-#calc {
+.calc {
     width: 80%;
     height: 40%;
-    background-color: hsl(172, 67%, 45%);
+    background-color: hsl(183, 94%, 20%);
     color: hsl(183, 100%, 15%);
     font-size: 16px;
     font-weight: 700;
@@ -251,17 +215,7 @@ grid-template-areas:
     border-radius: 10px;
 }
 
-#resetar {
-    width: 80%;
-    height: 40%;
+.calc:hover {
     background-color: hsl(172, 67%, 45%);
     color: hsl(183, 100%, 15%);
-    font-size: 16px;
-    font-weight: 700;
-    text-shadow: 1px 0px hsl(183, 100%, 15%);
-    border: none;
-    border-radius: 10px;
 }
-
-
-

@@ -16,8 +16,8 @@ class TipView {
                 <strong class="value">$ ${this.tip.total.toFixed(2)}</strong>
             </div>
             <div>
-                <button id="calc">Calcular</button>
-                <button id="resetar">Resetar</button>
+                <button id="calc" class="calc">Calcular</button>
+                <button id="resetar" class="calc">Resetar</button>
             </div>
         `
     }
