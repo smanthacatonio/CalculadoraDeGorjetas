@@ -20,7 +20,7 @@
 h1 {
     text-align: center;
     color: hsl(183, 100%, 15%);
-    font-size: 24px;
+    font-size: 15px;
     line-height: 24px;
 }
 
@@ -32,7 +32,6 @@ h1 {
         "bill calc"
         "tip calc"
         "people calc";
-    border: 1px solid black;
 }
 
 /* 
@@ -52,10 +51,10 @@ grid-template-areas:
 
 .calculator {
     background-color: hsl(0, 0%, 100%);
-    border: 1px solid blue;
+    border-radius: 10px;
 }
 
-.bill-text {
+.input-text {
     color: hsl(184, 14%, 56%);
     font-weight: 700;
 }
@@ -68,7 +67,136 @@ grid-template-areas:
 .bill {
     grid-area: bill;
     width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+
+.input-informations {
+    width: 100%;
+    height: 25%;
+    font-size: 10px;
+    position: relative;
+}
+
+.input-informations input {
+    width: 100%;
     height: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.input-informations input:focus {
+    outline: none;
+}
+
+.input-informations input:hover {
+    outline: hsl(183, 100%, 15%) solid 2px;
+}
+
+
+.input-informations {
+    width: 100%;
+    height: 25%;
+    position: relative;
+}
+
+.input-informations input {
+    width: 100%;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    background-color: hsl(189, 41%, 97%);
+    text-align: right;
+    color: hsl(183, 100%, 15%);
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.input-informations input:focus {
+    outline: none;
+}
+
+.input-informations input:hover {
+    outline: hsl(183, 100%, 15%) solid 2px;
+}
+
+.input-informations img {
+    left: 5px;
+    top: 10px;
+}
+
+.tip {
+    grid-area: tip;
+    width: 90%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas:
+        "header header header"
+        "b1 b2 b3"
+        "b4 b5 b6";
+}
+
+.tip button{
+    background-color: hsl(183, 100%, 15%);
+    color: white;
+}
+
+.tip button,
+.tip input {
+    text-align: center;
+    width: 90%;
+    height: 90%;
+    border: none;
+    outline: none;
+    border-radius: 10%;
+    font-size: 15px;
+    font-weight: 400;
+    align-content: center;
+    padding: 10px;
+}
+
+.tip button:hover:not(.selected),
+.tip input:hover:not(.selected) {
+    outline: hsl(172, 67%, 45%) solid 2px;
+    background-color:hsl(172, 67%, 45%);
+    color: hsl(183, 100%, 15%);
+}
+
+.tip input:hover:not(.selected)::placeholder {
+    outline:hsl(172, 67%, 45%);
+    background-color: white;
+    color: hsl(183, 100%, 15%);
+}
+
+.tip input:not(.selected)::placeholder {
+    color: hsl(0, 0%, 100%);
+}
+
+.tip input:not(.unselected)::placeholder {
+    color: hsl(183, 100%, 15%);
+}
+
+#tip_custom::-webkit-inner-spin-button,
+#tip_custom::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+}
+
+.people {
+    grid-area: people;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
