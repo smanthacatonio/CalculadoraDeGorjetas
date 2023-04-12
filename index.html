@@ -6,46 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tip Calculator</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Space+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
     
 </head>
 <body>
     <main>
-    <div class="background">
+    <div class="container">
         <h1>S P L I<br/>T T E R</h1>
             <div>
                 <!-- <button id="teste">TEste</button> -->
                 <form action="" class="calculator">
-                    <div class="input-informations">
-                        <div class="bill grid-centered">
-                            <label class="input-text">Bill</label>
-                            <div class="input-information">
-                                <!-- <div class="inserir"> -->
-                                    <img alt="valor" src="./images/icon-dollar.svg" />
-                                    <input type="text" name="bill" id="bill" placeholder="Insira o valor da conta">
-                                <!-- </div> -->
+                    <!-- <div class="informations"> -->
+                        <div class="input-informations">
+                            <div class="bill grid-centered">
+                                <label class="input-text">Bill</label>
+                                <div class="input-information">
+                                        <input type="text" name="bill" id="bill" placeholder="0">
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="tip grid-centered">
-                            <button class="tip-value" data-tip="5" id="tip_5">5%</button>
-                            <button class="tip-value" data-tip="10" id="tip_10">10%</button>
-                            <button class="tip-value" data-tip="15" id="tip_15">15%</button>
-                            <button class="tip-value" data-tip="25" id="tip_25">25%</button>
-                            <button class="tip-value" data-tip="50" id="tip_50">50%</button>
-                            <input class="tip-value" placeholder="Custom" id="tip_custom" aria-label="Custom">
+                            <div class="select-tip">
+                                <label class="input-text">Select Tip %</label>
                             </div>
-                        
-                        <div class="people grid-centered">
-                            <label class="input-text">Number of people</label>
-                            <div class="input-information">
-                                <img alt="pessoa" src="./images/icon-person.svg" />
-                                <input type="text" name="people" id="people">
+
+                            <div class="tip grid-centered">
+                                <button class="tip-value" data-tip="5" id="tip_5">5%</button>
+                                <button class="tip-value" data-tip="10" id="tip_10">10%</button>
+                                <button class="tip-value" data-tip="15" id="tip_15">15%</button>
+                                <button class="tip-value" data-tip="25" id="tip_25">25%</button>
+                                <button class="tip-value" data-tip="50" id="tip_50">50%</button>
+                                <input class="tip-value" placeholder="Custom" id="tip_custom" aria-label="Custom">
+                                </div>
+                            
+                            <div class="people grid-centered">
+                                <label class="input-text">Number of people</label>
+                                <div class="input-information">
+                                    <input type="text" name="people" id="people" placeholder="0">
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    <!-- </div> -->
 
                     <div id="app" class="tip-calculator">
                     

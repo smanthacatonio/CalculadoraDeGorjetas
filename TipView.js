@@ -5,17 +5,15 @@ class TipView {
 
     template() {
         return `
-            <div>
-                <span class="result">Tip Amount</span>
-                <span class="per-person"></br>/ person</br></span>
+            <div class="show-amount">
+                <span class="result">Tip Amount<span class="per-person"></br>/ person</br></span></span>
                 <strong class="value">$ ${this.tip.tipAmount.toFixed(2)}</strong>
             </div>
-            <div>
-                <span class="result">Total</span>
-                <span class="per-person"></br>/ person</br></span>
+            <div class="show-amount">
+                <span class="result">Total<span class="per-person"></br>/ person</br></span></span>
                 <strong class="value">$ ${this.tip.total.toFixed(2)}</strong>
             </div>
-            <div>
+            <div class="button-calc">
                 <button id="calc" class="calc">Calcular</button>
                 <button id="resetar" class="calc">Resetar</button>
             </div>
